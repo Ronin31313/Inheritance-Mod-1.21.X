@@ -1,5 +1,9 @@
 package net.ronin.eragonmod;
 
+import net.minecraft.world.item.CreativeModeTabs;
+import net.ronin.eragonmod.block.ModBlocks;
+import net.ronin.eragonmod.item.ModCreativeModeTabs;
+import net.ronin.eragonmod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -38,6 +42,11 @@ public class EragonMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -53,7 +62,15 @@ public class EragonMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.DRAGON_SCALE);
+            event.accept(ModItems.DIRTY_SCALE);
+        }
 
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.DRAGON_SCALE_BLOCK);
+            event.accept(ModBlocks.DRAGON_SCALE_ORE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
