@@ -35,7 +35,7 @@ public class ModItems {
             });
 
     public static final DeferredItem<Item> FROSTFIRE_ICE = ITEMS.register("frostfire_ice",
-            () -> new FuelItem(new Item.Properties(), 800));
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",
             () -> new Item(new Item.Properties()));

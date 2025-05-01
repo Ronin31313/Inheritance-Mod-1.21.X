@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "dragon_scale",
+  "ingredient": {
+    "item": "eragonmodronin:dragon_scale_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "eragonmodronin:dragon_scale"
+  }
+}

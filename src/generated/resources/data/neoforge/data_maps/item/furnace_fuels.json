@@ -1,0 +1,10 @@
+{
+  "values": {
+    "eragonmodronin:frostfire_ice": {
+      "burn_time": 1200
+    },
+    "eragonmodronin:starlight_ashes": {
+      "burn_time": 2400
+    }
+  }
+}

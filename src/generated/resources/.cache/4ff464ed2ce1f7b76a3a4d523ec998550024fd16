@@ -1,0 +1,5 @@
+// 1.21.1	2025-05-01T21:33:28.6532147	Tags for minecraft:block mod id eragonmodronin
+b8d02a7f301f86a9ec5c59b777780224fbea3a64 data/minecraft/tags/block/mineable/pickaxe.json
+01cc3ea65d57afdc2f908aebda61e612ef7be737 data/minecraft/tags/block/needs_diamond_tool.json
+4b4f8b3c035a49ad72241ee550376d4d62ea716a data/minecraft/tags/block/needs_iron_tool.json
+39faf0303be476d74c21334036b6d8642f156047 data/minecraft/tags/block/needs_stone_tool.json
