@@ -1,9 +1,15 @@
 {
   "item.eragonmodronin.dragon_scale": "Dragon Scale",
   "item.eragonmodronin.dirty_scale": "Dirty Scale",
+  "item.eragonmodronin.chisel": "Chisel",
+  "item.eragonmodronin.radish": "Radish",
+  "item.eragonmodronin.frostfire_ice": "Frostfire Ice",
+  "item.eragonmodronin.starlight_ashes": "Starlight Ashes",
 
   "block.eragonmodronin.dragon_scale_block": "Dragon Scale Block",
   "block.eragonmodronin.dragon_scale_ore": "Dragon Scale Ore",
+  "block.eragonmodronin.dragon_scale_deepslate_ore": "Dragon Scale Deepslate Ore",
+  "block.eragonmodronin.magic_block": "Magic Block",
 
   "creativetab.eragonmodronin.eragon_items": "Eragon Items",
   "creativetab.eragonmodronin.eragon_blocks": "Eragon Blocks"

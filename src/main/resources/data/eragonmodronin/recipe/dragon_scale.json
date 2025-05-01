@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eragonmodronin:dragon_scale_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eragonmodronin:dragon_scale"
+  }
+}

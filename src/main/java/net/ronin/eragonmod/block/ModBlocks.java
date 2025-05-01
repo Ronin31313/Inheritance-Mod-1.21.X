@@ -11,12 +11,16 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.ronin.eragonmod.EragonMod;
+import net.ronin.eragonmod.block.custom.MagicBlock;
 import net.ronin.eragonmod.item.ModItems;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EragonMod.MOD_ID);
+
+
+
 
     public static final DeferredBlock<Block> DRAGON_SCALE_BLOCK = registerBlock("dragon_scale_block",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -26,6 +30,17 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 4),
                     BlockBehaviour.Properties.of()
                     .strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> DRAGON_SCALE_DEEPSLATE_ORE = registerBlock("dragon_scale_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                            .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops()));
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

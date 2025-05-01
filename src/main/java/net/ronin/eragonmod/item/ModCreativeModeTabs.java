@@ -23,6 +23,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) ->   {
                         output.accept(ModItems.DRAGON_SCALE);
                         output.accept(ModItems.DIRTY_SCALE);
+                        output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.RADISH);
+                        output.accept(ModItems.FROSTFIRE_ICE);
+                        output.accept(ModItems.STARLIGHT_ASHES);
                     }).build());
 
 public static final Supplier<CreativeModeTab> ERAGON_BLOCKS_TAB = CREATIVE_MODE_TAB.register("eragon_blocks_tab",
@@ -32,6 +36,8 @@ public static final Supplier<CreativeModeTab> ERAGON_BLOCKS_TAB = CREATIVE_MODE_
                     .displayItems((itemDisplayParameters, output) ->   {
                         output.accept(ModBlocks.DRAGON_SCALE_BLOCK);
                         output.accept(ModBlocks.DRAGON_SCALE_ORE);
+                        output.accept(ModBlocks.DRAGON_SCALE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
 
