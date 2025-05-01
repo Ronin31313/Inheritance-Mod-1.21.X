@@ -12,5 +12,10 @@
   "block.eragonmodronin.magic_block": "Magic Block",
 
   "creativetab.eragonmodronin.eragon_items": "Eragon Items",
-  "creativetab.eragonmodronin.eragon_blocks": "Eragon Blocks"
+  "creativetab.eragonmodronin.eragon_blocks": "Eragon Blocks",
+
+  "tooltip.eragonmodronin.magic_block.tooltip": "Very Magical Block",
+  "tooltip.eragonmodronin.chisel.tooltip": "Chisels stuff",
+  "tooltip.eragonmodronin.chisel.condition": "Press Shift for more information",
+  "tooltip.eragonmodronin.radish.tooltip": "Tasty"
 }
